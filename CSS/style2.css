@@ -1,3 +1,7 @@
+@import url(./_global.css);
+@import url(./_utility.css);
+
+
 * {
     margin: 0;
     padding: 0;
@@ -197,11 +201,7 @@ a {
     text-align: center;
 }
 
-.fa-chevron-up,
-.fa-chevron-down {
-    color: blue;
-    cursor: pointer;
-}
+
 
 .cart-footer {
     text-align: center;
@@ -258,3 +258,55 @@ a {
     color: red;
 
 }
+
+
+footer {
+    background-color: var(--theme-section-bg);
+}
+
+footer .logo img {
+    cursor: pointer;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 10rem;
+}
+
+footer p {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer li {
+    font-size: 1.6rem;
+    padding: 0.6rem 0;
+    color: var(--theme-text-dull);
+}
+
+footer li:hover {
+    cursor: pointer;
+}
+
+footer i {
+    padding-right: 1rem;
+}
+
+footer .bi-twitter {
+    color: #1da1f2;
+}
+
+footer .bi-instagram {
+    color: #c13584;
+}
+
+footer .bi-youtube {
+    color: #db0000;
+};
