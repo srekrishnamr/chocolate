@@ -1,0 +1,312 @@
+@import url(./_global.css);
+@import url(./_utility.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/******************NAV-BAR********************/
+.nav-bar {
+    padding: 5px 10px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 5px;
+    background-color: white;
+}
+
+.nav-header img {
+    width: 210px;
+    height: 90px;
+
+
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-links {
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+
+
+}
+
+.links {
+    height: auto;
+}
+
+.nav-links ul li {
+    font-size: 20px;
+    padding: 10px;
+    list-style-type: none;
+    text-transform: capitalize;
+
+
+}
+
+.nav-links ul li:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+
+    color: black;
+    transition: .1s;
+}
+
+.nav-links ul li:hover a {
+    color: orange;
+    transform: scale(1.1);
+}
+
+
+.container {
+    display: grid;
+}
+
+.fa-cart-shopping {
+    cursor: pointer;
+    color: orange;
+    font-size: 25px;
+}
+
+@media (min-width:700px) {
+    .nav-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links ul {
+        display: flex;
+
+    }
+
+    .nav-links ul li {
+        border-bottom: none !important;
+
+    }
+
+    .nav-links {
+        height: auto;
+
+    }
+
+}
+
+.btn-top {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    position: fixed;
+    right: -30px;
+    bottom: 10px;
+    border-radius: 4px;
+    transition: .3s;
+
+}
+
+.showBtn-Top {
+    right: 5px;
+}
+
+.cart {
+    position: normal;
+    width: 100%;
+    height: 20vh;
+    top: 0;
+    right: 0;
+    overflow: scroll;
+    transform: translateX(100%);
+    background-color: orange;
+}
+
+.showCart {
+    transform: translateX(0);
+}
+
+.cart-item {
+    margin-bottom: 20px;
+}
+
+.close-cart {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    margin: 5px;
+
+}
+
+.fa-cart-plus {
+    color: orange;
+    cursor: pointer;
+}
+
+.cart-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+}
+
+.cart-item h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+
+.remove-item {
+    color: blue;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.cart-item h5 {
+    font-size: 16px;
+}
+
+.cart h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    padding: 10px 0;
+    color: white;
+}
+
+.cart-content {
+    padding: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.cart-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cart-footer h3 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.cart-footer .clear-cart {
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1.6px;
+    border: 1px solid white;
+
+}
+
+.cart-footer .col {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: blue;
+    transition: .5s;
+    z-index: -9;
+}
+
+.cart-footer .clear-cart:hover .col {
+    width: 100%;
+}
+
+@media (min-width:700px) {
+
+    .cart {
+        width: 30vw;
+        min-width: 350px;
+    }
+}
+
+.disable {
+    color: red;
+    pointer-events: none;
+}
+
+.fa-cart-shopping:hover {
+    color: red;
+
+}
+
+
+footer {
+    background-color: var(--theme-section-bg);
+}
+
+footer .logo img {
+    cursor: pointer;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 10rem;
+}
+
+footer p {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer li {
+    font-size: 1.6rem;
+    padding: 0.6rem 0;
+    color: var(--theme-text-dull);
+}
+
+footer li:hover {
+    cursor: pointer;
+}
+
+footer i {
+    padding-right: 1rem;
+}
+
+footer .bi-twitter {
+    color: #1da1f2;
+}
+
+footer .bi-instagram {
+    color: #c13584;
+}
+
+footer .bi-youtube {
+    color: #db0000;
+};
