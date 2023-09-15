@@ -1,0 +1,32 @@
+@media (min-width:1279px) {}
+
+@media (max-width:1279px) {}
+
+@media (max-width:992px) {
+    header {
+        position: sticky;
+        top: 0;
+        background-color: #ffffff;
+        z-index: 100;
+    }
+    nav.d-menu {
+        display: none;
+    }
+    nav.m-menu {
+        display: block;
+    }
+    
+}
+
+@media (max-width:768px) {
+    
+    footer .links {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    footer .links div {
+        margin-bottom: 3rem;
+    }
+}
+
